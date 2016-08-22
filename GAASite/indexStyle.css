@@ -1,0 +1,465 @@
+/*
+	Author: Luke Toland
+	CSS
+*/
+
+body, html{
+	min-height: 100%;
+}
+
+body {
+	/*background-color: #4169E1;
+	/*background:  linear-gradient(to bottom, rgba(134,174,204,1) 0%, rgba(134,174,204,1) 3%, rgba(212,228,239,1) 120%);*/
+	/*background-image: url('images/home-background.jpg');*/
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+	font-size: 87.5%;
+	margin: 0 auto;
+	clear: both;
+	width: 70%;
+	margin: 0 15%;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+h1{
+	color: #4c4e5a;
+}
+
+h2{
+	color: #4c4e5a;
+}
+
+h3 {
+	text-align: center;
+}
+
+/*******Profile***********/
+.profile {
+	border-radius: 5px;
+	line-height: 25px;
+	background-color: #FFFFFF;
+	padding: 3% 5%;
+	margin-top: 10px;
+	margin-left: 15%;
+	width: 60%;
+
+}
+
+/**Slider**/
+.wrapper { 
+	margin-top: 10px;
+	margin-left: 15%;
+	width: 70%;
+	height: 50%;
+	border-radius: :5px;
+}
+
+.container {
+	background-color: #FFC;
+	display: block;
+	float: left;
+	overflow: auto;
+}
+
+
+
+
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+.cycle-slideshow { width: 50%; min-width: 320px; max-width: 720px; margin: 10px auto; padding: 0; position: relative;
+    background: url(images/spinner.gif) 50% 50% no-repeat;
+
+ }
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+
+/* pager */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: visible;
+}
+.cycle-pager span {
+	font-family: arial;
+	font-size: 50px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	color: rgba(0,204,255,0.3);
+	cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active {
+	color: rgba(255,255,255,0.5);
+}
+.cycle-pager > * { cursor: pointer;}
+
+
+/* caption */
+.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+/* overlay */
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+
+
+/* prev / next links */
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: 0;  background: url(images/leftArrow.png) 50% 50% no-repeat;}
+.cycle-next { right: 0; background: url(images/rightArrow.png) 50% 50% no-repeat;}
+.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+    content: 'Paused'; color: white; background: black; padding: 10px;
+    z-index: 500; position: absolute; top: 10px; right: 10px;
+    border-radius: 10px;
+    opacity: .5; filter: alpha(opacity=50);
+}
+
+
+/*********MAIN*************/
+.mainContent {
+	border-radius: 5px;
+	line-height: 25px;
+	background-color: #FFFFFF;
+}
+
+
+.background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  display: block;
+  background-image: url('images/home-background.jpg');
+  width: 1920%;
+  height: 1080%;
+
+  /*-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/
+}
+/*
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+*/
+.content { 
+	position: fixed;
+	width: 40%;
+	float: left;
+	z-index: 9999;
+	border-radius: 5px;
+	margin-left: 15%;
+}
+.secondP {
+	position: fixed;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 10px;
+}
+
+
+*/
+.firstP {
+	position: fixed;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 10px;
+}
+
+
+
+#submit {
+	position: fixed;
+    background-color: #4c4e5a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+
+
+#submit:hover {
+    border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
+}
+/************comboBox**************/
+
+.resultsMain select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+
+   color: #275420;
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(images/arrow.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   opacity: 5;
+}
+
+/*************************NAV****************************/
+
+.navi nav {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #36752D;
+	width: 70%;
+	height: 40px;
+	margin-left: 15%;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family: Arial;
+	/*-moz-border-radius: 5px;border-radius: 5px;*/
+}
+
+.navi nav ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	margin: 0;
+	position: relative;
+
+}
+
+.navi nav ul li {
+	display: inline-block;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	line-height: 20px;
+	padding: 10px 30px;
+}
+
+.navi nav ul li:hover {
+	background-color: #FFF;
+}
+
+.navi nav ul li a:hover {
+	text-decoration: none;
+}
+/*.navi nav a:link {
+	color: #04B404;
+	display: block;
+	height: 20px;
+	/*border-radius: 5px;
+}*/
+
+
+.navi nav ul li a:visited {
+	color: #ccc;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.navi nav ul li:hover ul{
+	display: block;
+}
+
+.navi nav ul ul {
+	display: none;
+	position: absolute;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #36752D;
+	color: #FFF;
+	border: 5px solid #000;
+	margin-left: 12%;
+	margin-top: 3.5%;
+	width: 130px;
+}
+
+.navi nav ul ul li {
+	display: block;
+	padding: 0 auto;
+}
+
+.navi ul ul li a:hover {
+	color: #099;
+
+}
+
+
+/*.navi nav a:visited {
+	color: #FFF;
+}*/
+
+
+
+.resultsMain {
+	margin-left: 15%;
+	width: 60%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 10px;
+}
+
+
+
+
+
+/************************Table********************/
+.resultsTable table { 
+	border-collapse: collapse; text-align: left; width: 100%; 
+} 
+.resultsTable {
+	font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #36752D; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+.resultsTable table td {
+ 	 padding: 3px 10px; 
+}
+
+.resultsTable table tbody td { 
+	color: #275420; border-left: 1px solid #C6FFC2;font-size: 12px;font-weight: normal; 
+}
+.resultsTable table tbody .alt td { 
+	background: #DFFFDE; color: #275420; 
+}
+
+.resultsTable table tbody td:first-child { 
+	border-left: none; }.resultsTable table tbody tr:last-child td { border-bottom: none; 
+}
+
+.resultsTable table tfoot td div { 
+	border-top: 1px solid #36752D;background: #DFFFDE;
+} 
+.resultsTable table tfoot td { 
+	padding: 0; font-size: 12px 
+} 
+
+.resultsTable table tfoot td div{
+ padding: 2px; 
+}
+
+.liveTable table { 
+	border-collapse: collapse; text-align: left; width: 100%; 
+} 
+.liveTable {
+	font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #36752D; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+.liveTable table td {
+ 	 padding: 3px 10px; 
+}
+
+.liveTable table tbody td { 
+	color: #275420; border-left: 1px solid #C6FFC2;font-size: 12px;font-weight: normal; 
+}
+.liveTable table tbody .alt td { 
+	background: #DFFFDE; color: #275420; 
+}
+
+.liveTable table tbody td:first-child { 
+	border-left: none; }.resultsTable table tbody tr:last-child td { border-bottom: none; 
+}
+
+.liveTable table tfoot td div { 
+	border-top: 1px solid #36752D;background: #DFFFDE;
+} 
+.liveTable table tfoot td { 
+	padding: 0; font-size: 12px 
+} 
+
+.liveTable table tfoot td div{
+ padding: 2px; 
+}
+
+
+
+
+/**************Selections*******************/
+.selection {
+	margin-left: 15%;
+	width: 60%;
+
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 10px;
+}
+
+
+
+/********************Leaderboards**********************/
+
+
+.datagrid table { 
+	border-collapse: collapse; text-align: left; width: 100%; 
+} 
+.datagrid {
+	font: normal 12px/150% Geneva, Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #36752D; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; 
+}
+.datagrid table td, .datagrid table th { 
+	padding: 3px 10px; 
+}
+.datagrid table thead th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #36752D;
+} 
+
+.datagrid table thead th:first-child { 
+	border: none; 
+}
+
+.datagrid table tbody td { 
+	color: #275420; border-left: 1px solid #C6FFC2;font-size: 12px;border-bottom: 1px solid #E1EEF4;font-weight: normal; 
+}
+
+.datagrid table tbody .alt td { 
+	background: #DFFFDE; color: #275420;
+}
+
+.datagrid table tbody td:first-child { 
+	border-left: none; 
+}
+
+.datagrid table tbody tr:last-child td { 
+	border-bottom: none; 
+}
